@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário de Contato</title>
+  <style>
+    .container {
+      width: 300px;
+      margin: 30px auto;
+      padding: 15px;
+      border: 1px solid #ccc;
+      background: #fff;
+    }
+
+    h2 {
+      text-align: center;
+      color: brown;
+      margin-bottom: 15px;
+    }
+
+    input, textarea {
+      width: 90%;
+      margin: 6px 0;
+      padding: 8px;
+      border: 1px solid #000;
+    }
+
+    textarea {
+      height: 80px;
+      resize: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 8px;
+      background: rgb(205, 63, 63);
+      color: rgb(0, 0, 0);
+      border: none;
+    }
+
+    button:hover {
+      background: sienna;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Formulário de Contato</h2>
+    <form>
+      <input type="text" placeholder="Insira o seu nome" required>
+      <input type="email" placeholder="Insira o seu Email" required>
+      <textarea placeholder="Insira a sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+</body>
+</html>
