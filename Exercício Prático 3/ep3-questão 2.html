@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício prático 3 - Questão 2</title>
+</head>
+<body>
+    <h1>Gerador de Lista</h1>
+    <form action="">
+        <input type="number" id="numero" name="numero" placeholder="Digite a quantidade de itens">
+        <input type="button" onclick="Lista()" value="Gerar lista">
+    </form>
+    <ul id="lista"></ul>
+    <script>
+        function Lista() {
+            let quantidade = document.getElementById("numero").value;
+            let lista = document.getElementById("lista");
+            lista.innerHTML = "";
+            for (let i = 1; i <= quantidade; i++) {
+                let item = document.createElement("li");
+                item.textContent = `Isabelle Moreira ${i}`;
+                lista.appendChild(item);
+            }
+        }
+    </script>
+</body>
+</html>

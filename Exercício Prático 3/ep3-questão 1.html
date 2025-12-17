@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício prático 3 - Questão 1</title>
+    
+</head>
+<body>
+    <h1>Bem vindo!</h1>
+    <form action="">
+        <label for="name">Digite seu nome:</label><br><br>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome">
+        <input type="button" onclick="verificarResposta()" value="Clique aqui"> <br><br>
+        <label for="name" id="texto"> </label><br><br>
+        
+    </form>
+</body>
+</html>
+
+<script>
+function verificarResposta() {
+    let nome = document.getElementById("nome").value
+    if (nome === "") {
+    document.getElementById("texto").textContent = "Por favor, insira seu nome.";
+  } else {
+    document.getElementById("texto").textContent = `Olá, ${nome}! Seja bem-vindo à página do aluno(a)`;
+  }
+}
+</script>
+
